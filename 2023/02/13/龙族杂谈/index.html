@@ -176,7 +176,7 @@ if (false) {
   const init = () => {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
-      envId: '',
+      envId: 'https://lxh-2230-github-io.vercel.app/',
       region: '',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
@@ -188,7 +188,7 @@ if (false) {
     const countELement = document.getElementById('twikoo-count')
     if(!countELement) return
     twikoo.getCommentsCount({
-      envId: '',
+      envId: 'https://lxh-2230-github-io.vercel.app/',
       region: '',
       urls: [window.location.pathname],
       includeReply: false
@@ -209,7 +209,7 @@ if (false) {
       setTimeout(runFn,0)
       return
     } 
-    getScript('/%5Bobject%20Object%5D').then(runFn)
+    getScript('https://cdn.jsdelivr.net/npm/twikoo/dist/twikoo.all.min.js').then(runFn)
   }
 
   if ('Twikoo' === 'Twikoo' || !true) {
