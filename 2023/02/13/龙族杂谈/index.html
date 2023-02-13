@@ -177,7 +177,7 @@ if (false) {
     twikoo.init(Object.assign({
       el: '#twikoo-wrap',
       envId: 'https://lxh-2230-github-io-git-main-lxh01523-163com.vercel.app/',
-      region: '',
+      region: 'ap-shanghai',
       onCommentLoaded: function () {
         btf.loadLightbox(document.querySelectorAll('#twikoo .tk-content img:not(.tk-owo-emotion)'))
       }
@@ -189,7 +189,7 @@ if (false) {
     if(!countELement) return
     twikoo.getCommentsCount({
       envId: 'https://lxh-2230-github-io-git-main-lxh01523-163com.vercel.app/',
-      region: '',
+      region: 'ap-shanghai',
       urls: [window.location.pathname],
       includeReply: false
     }).then(function (res) {
